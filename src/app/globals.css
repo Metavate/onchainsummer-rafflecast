@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  
+
+
+@font-face {
+  font-family: rafflecast-normal;
+  src: url('../fonts/Geist-Regular.ttf');
+}
+
+@font-face {
+  font-family: rafflecast-bold;
+  src: url('../fonts/Geist-Bold.ttf');
+}
+
+@font-face {
+  font-family: rafflecast-thin;
+  src: url('../fonts/Geist-Thin.ttf');
+}
+
+
+:root {
+  font-size: 10px;
+  font-family: 'rafflecast-normal';
+
+  --RaffleCast-Primary: #b923ff;
+  --RaffleCast-Secondary: #682271;
+
+  --RaffleCast-ActiveColor: #a056e1;
+  
+  --Text: rgb(255, 255, 255);
+  --RaffleCast-SecondaryText: #b276e8;
+  --RaffleCast-TextHover: #9d4cdf4b;
+
+  --RaffleCast-Background: #10111f;
+
+  --RaffleCast-Border: #1e20388b;
+
+  --RaffleCast-Glass: #0000009e;
+
+  --RaffleCast-ButtonFill: #20223d;
+  --RaffleCast-ButtonCancel: #0a0b15;
+}
+
+.active {
+  background-color: var(--RaffleCast-ActiveColor);
+  color: var(--Text); /* Set the active button color here */
+  border-radius: .5rem;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--RaffleCast-Background);
+}
+
+/* ._1n3pr301 {
+  padding: 10px 13px; 
+  background: var(--RaffleCast-ButtonFill);
+  border-radius: 1rem;
+  width: 15rem;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+._1n3pr301:hover {
+  padding: 10px 13px; 
+  background: var(--RaffleCast-ButtonCancel);
+  transition: all 0.3s ease-in-out;
+  transform: scale(.95);
+} */
+
+
+.loader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
